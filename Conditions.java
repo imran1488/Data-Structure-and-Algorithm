@@ -4,12 +4,20 @@ import java.util.*;
 public class Conditions {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int age = sc.nextInt();
-        if (age > 18) {
-            System.out.println("You are eligible to vote");
-        } else {
-            System.out.println("You are a noob");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a == b){
+            System.out.println("Equals");
         }
+        else{
+            if(a>b){
+                System.out.println("A is greater than b");
+            }
+            else{
+                System.out.println("A is lesser than B");
+            }
+        }
+        
     }
 
 }
